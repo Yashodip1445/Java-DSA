@@ -1,0 +1,15 @@
+binary        Unary 
+           
++            ++  increment 
+-            -- decrement
+*
+/
+%
+
+   Unary operator 
+Pre increment   ||  post increment
+++a                   a++
+Pre decrement   ||  post decrement
+--a                   a--
+     1.value change 
+     2.value use 
