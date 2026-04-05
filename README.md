@@ -222,8 +222,8 @@ Feel free to fork and contribute!
 
 # 🔗 Connect With Me
 
-* GitHub: (your link)
-* LinkedIn: (your link)
+* GitHub: https://github.com/Yashodip1445/
+* LinkedIn: (https://www.linkedin.com/in/yashodipwani2004/)
 
 ---
 
