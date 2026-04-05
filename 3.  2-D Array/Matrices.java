@@ -17,7 +17,7 @@ public class Matrices {
 
             }
         }
-        sc.close();
+        
 
         // output
         for (int i = 0; i < n; i++) {

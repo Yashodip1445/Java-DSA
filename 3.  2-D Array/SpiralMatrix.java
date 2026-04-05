@@ -1,48 +1,49 @@
+
 public class SpiralMatrix {
-    public static void main(String[] args) {
-        // Define a 4x4 matrix with elements from 1 to 16
-        int[][] matrix = {
-            { 1,  2,  3,  4 },
-            { 5,  6,  7,  8 },
-            { 9, 10, 11, 12 },
-            {13, 14, 15, 16 }
-        };
+    public static void printSpiral(int[][] matrix) {
+        int startRow = 0, endRow = matrix.length - 1;
+        int startCol = 0, endCol = matrix[0].length - 1;
 
-        int n = 4, m = 4;
-
-        // Spiral order printing
-        System.out.println("Spiral Order:");
-        int top = 0, bottom = n - 1;
-        int left = 0, right = m - 1;
-
-        while (top <= bottom && left <= right) {
-            // Traverse from left to right
-            for (int i = left; i <= right; i++) {
-                System.out.print(matrix[top][i] + " ");
+        while (startRow <= endRow && startCol <= endCol) {
+            // 1. Print top row
+            for (int j = startCol; j <= endCol; j++) {
+                System.out.print(matrix[startRow][j] + " ");
             }
-            top++;
+            startRow++;
 
-            // Traverse downwards
-            for (int i = top; i <= bottom; i++) {
-                System.out.print(matrix[i][right] + " ");
+            // 2. Print right column
+            for (int i = startRow; i <= endRow; i++) {
+                System.out.print(matrix[i][endCol] + " ");
             }
-            right--;
+            endCol--;
 
-            // Traverse from right to left
-            if (top <= bottom) {
-                for (int i = right; i >= left; i--) {
-                    System.out.print(matrix[bottom][i] + " ");
+            // 3. Print bottom row
+            if (startRow <= endRow) {
+                for (int j = endCol; j >= startCol; j--) {
+                    System.out.print(matrix[endRow][j] + " ");
                 }
-                bottom--;
+                endRow--;
             }
 
-            // Traverse upwards
-            if (left <= right) {
-                for (int i = bottom; i >= top; i--) {
-                    System.out.print(matrix[i][left] + " ");
+            // 4. Print left column
+            if (startCol <= endCol) {
+                for (int i = endRow; i >= startRow; i--) {
+                    System.out.print(matrix[i][startCol] + " ");
                 }
-                left++;
+                startCol++;
             }
         }
+    }
+
+    public static void main(String[] args) {
+        int[][] matrix = {
+            {1,  2,  3,  4},
+            {5,  6,  7,  8},
+            {9, 10, 11, 12},
+            {13,14, 15,16}
+        };
+
+        System.out.println("Spiral Order:");
+        printSpiral(matrix);
     }
 }
