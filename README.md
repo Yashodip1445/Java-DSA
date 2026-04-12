@@ -216,11 +216,11 @@ DSA-Java/
 
 # ⭐ Contribute
 
-Feel free to fork and contribute!
+Feel free ttribute!
 
 ---
 
-# 🔗 Connect With Me
+# 🔗 Connect With Meo fork and con
 
 * GitHub: https://github.com/Yashodip1445/
 * LinkedIn: (https://www.linkedin.com/in/yashodipwani2004/)
